@@ -1,0 +1,245 @@
+{
+  "run": "r4",
+  "date": "2026-11-14",
+  "runs": [
+    {
+      "vendor": "openai",
+      "id": "gpt-4.1-mini",
+      "temperature": 1.0,
+      "label": "gpt-4.1-mini@t1.0"
+    },
+    {
+      "vendor": "anthropic",
+      "id": "claude-haiku-4-5-20251001",
+      "temperature": 1.0,
+      "label": "claude-haiku-4-5-20251001@t1.0"
+    }
+  ],
+  "emb_model": "text-embedding-3-small",
+  "n_variants": 20,
+  "max_tokens": 3000,
+  "modes": [
+    "independent",
+    "batch_plain",
+    "batch",
+    "assigned_strategy",
+    "independent_strategy",
+    "independent_slot"
+  ],
+  "reps": 5,
+  "briefs": [
+    {
+      "id": "B01",
+      "cat": "food",
+      "brand": "Northwind Oats",
+      "product": "high-protein instant oat cups",
+      "audience": "busy commuters aged 25-40",
+      "channel": "Instagram feed ad"
+    },
+    {
+      "id": "B02",
+      "cat": "food",
+      "brand": "Copperleaf Tea",
+      "product": "monthly loose-leaf tea subscription",
+      "audience": "office workers who drink tea daily",
+      "channel": "Facebook ad"
+    },
+    {
+      "id": "B03",
+      "cat": "food",
+      "brand": "Harbour Pantry",
+      "product": "frozen ready meals sized for one",
+      "audience": "people living alone aged 30-55",
+      "channel": "TikTok in-feed ad"
+    },
+    {
+      "id": "B04",
+      "cat": "home",
+      "brand": "Lumen Home",
+      "product": "smart plug that cuts standby power",
+      "audience": "renters who pay their own electricity",
+      "channel": "Facebook ad"
+    },
+    {
+      "id": "B05",
+      "cat": "home",
+      "brand": "Quillbed",
+      "product": "breathable bamboo bed sheets",
+      "audience": "hot sleepers in warm climates",
+      "channel": "Instagram feed ad"
+    },
+    {
+      "id": "B06",
+      "cat": "home",
+      "brand": "Brightwash",
+      "product": "plastic-free laundry detergent strips",
+      "audience": "eco-minded households with children",
+      "channel": "TikTok in-feed ad"
+    },
+    {
+      "id": "B07",
+      "cat": "family",
+      "brand": "Trailbound",
+      "product": "weekend family camping kit rental",
+      "audience": "parents of children aged 5-12",
+      "channel": "TikTok in-feed ad"
+    },
+    {
+      "id": "B08",
+      "cat": "family",
+      "brand": "Pebblewick Toys",
+      "product": "screen-free wooden building sets",
+      "audience": "parents of children aged 3-7",
+      "channel": "Instagram feed ad"
+    },
+    {
+      "id": "B09",
+      "cat": "family",
+      "brand": "Tidewater Rides",
+      "product": "monthly e-bike rental with servicing",
+      "audience": "city commuters without a car",
+      "channel": "Facebook ad"
+    },
+    {
+      "id": "B10",
+      "cat": "care",
+      "brand": "Fernhollow",
+      "product": "fragrance-free moisturiser for sensitive skin",
+      "audience": "adults with easily irritated skin",
+      "channel": "Instagram feed ad"
+    },
+    {
+      "id": "B11",
+      "cat": "care",
+      "brand": "Kestrel Shave",
+      "product": "refillable razor subscription",
+      "audience": "men aged 20-45 who shave daily",
+      "channel": "Facebook ad"
+    },
+    {
+      "id": "B12",
+      "cat": "care",
+      "brand": "Solvane",
+      "product": "SPF 50 tinted daily sunscreen",
+      "audience": "outdoor workers and runners",
+      "channel": "TikTok in-feed ad"
+    }
+  ],
+  "strategies": [
+    "social proof",
+    "scarcity",
+    "humour",
+    "problem-solution",
+    "aspiration",
+    "price/value",
+    "authority",
+    "nostalgia",
+    "fear of missing out",
+    "curiosity gap",
+    "storytelling",
+    "comparison",
+    "sensory description",
+    "challenge",
+    "community",
+    "simplicity",
+    "surprise statistic",
+    "question hook",
+    "testimonial-style",
+    "benefit stacking"
+  ],
+  "system_prompt": "You write short social-media ad copy. Output only what is asked, as valid JSON, with no markdown.",
+  "length_limits": {
+    "headline_words": [
+      4,
+      8
+    ],
+    "body_words": [
+      15,
+      25
+    ]
+  },
+  "workers": {
+    "openai": 4,
+    "anthropic": 2
+  },
+  "seed": 20261114,
+  "prices_usd_per_mtok": {
+    "gpt-4.1-mini": [
+      0.4,
+      1.6
+    ],
+    "claude-haiku-4-5-20251001": [
+      1.0,
+      5.0
+    ],
+    "text-embedding-3-small": [
+      0.02,
+      0.0
+    ],
+    "gpt-4.1": [
+      2.0,
+      8.0
+    ],
+    "claude-sonnet-5-5": [
+      3.0,
+      15.0
+    ],
+    "claude-sonnet-4-5": [
+      3.0,
+      15.0
+    ]
+  },
+  "usd_total_estimate": 11.260200000000001,
+  "sets_expected": 720,
+  "sets_done": 720,
+  "sets_failed_last_pass": [],
+  "sampling_by_model": {
+    "claude-haiku-4-5-20251001@t1.0": [
+      "default (API rejected temperature; documented default 1.0)"
+    ],
+    "claude-sonnet-5-5": [
+      "temp=None"
+    ],
+    "gpt-4.1": [
+      "temp=0.0"
+    ],
+    "gpt-4.1-mini@t1.0": [
+      "temperature"
+    ]
+  },
+  "python": "3.13.18",
+  "openai": "2.54.0",
+  "anthropic": "2.8.0",
+  "judges": [
+    {
+      "name": "judge_openai",
+      "vendor": "openai",
+      "models": [
+        "gpt-4.1",
+        "gpt-4o"
+      ]
+    },
+    {
+      "name": "judge_anthropic",
+      "vendor": "anthropic",
+      "models": [
+        "claude-sonnet-5-5",
+        "claude-sonnet-4-5"
+      ]
+    }
+  ],
+  "judge_used": {
+    "judge_openai": {
+      "model": "gpt-4.1",
+      "temp": 0.0
+    },
+    "judge_anthropic": {
+      "model": "claude-sonnet-5-5",
+      "temp": null
+    }
+  },
+  "judge_system": "You are an advertising researcher who codes ad copy for a study. Output only valid JSON, with no markdown.",
+  "coded_sets": 144,
+  "judgements_ok": 287,
+  "megastudy_messages": 0
+}
