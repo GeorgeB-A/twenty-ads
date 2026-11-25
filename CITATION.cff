@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Twenty Ads: a dataset of LLM-generated ad variant sets"
+version: 1.0.0
+date-released: 2026-11-23
+doi: 10.5281/zenodo.24459422
+license: CC-BY-4.0
+type: dataset
+authors:
+  - family-names: Bykovskii
+    given-names: George
+    orcid: "https://orcid.org/0000-0002-7400-5782"
+    affiliation: "Swinburne University of Technology"
+keywords:
+  - advertising
+  - generative AI
+  - A/B testing
+  - creative diversity
+  - near-duplicates
+  - LLM evaluation
+abstract: >-
+  1,680 sets of 20 social-media ads written by gpt-4.1-mini and claude-haiku-4-5 under six ways of requesting
+  variants for 12 briefs, with effective semantic diversity (Vendi score) per set and judge-coded ideas and
+  persuasion strategies for 264 sets.
+references:
+  - type: dataset
+    title: "Replication package: Twenty ads, one idea - modelling near-duplicate AI creative and the winner's curse in A/B testing"
+    authors:
+      - family-names: Bykovskii
+        given-names: George
+    doi: 10.5281/zenodo.24433509
